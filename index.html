@@ -12,12 +12,6 @@
     <div class="ui container">
       <div class="ui top attached segment" id="sheet">
       </div>
-      <!-- <div class="ui bottom attached menu" id="sheetButtons">
-        <div class="right menu">
-          <a class="item" id="add"><i class="plus icon"></i></a>
-          <a class="item" id="remove"><i class="remove icon"></i></a>
-        </div>
-      </div> -->
     </div>
     <div class="ui container">
       <div class="ui top attached tabular menu" id="chartButtons">
@@ -25,8 +19,18 @@
         <a class="item" id="Line">Line</a>
         <a class="item" id="Radar">Radar</a>
         <div class="right menu">
-          <button class="ui icon brown button" id="add"><i class="plus icon"></i></a>
-          <button class="ui icon brown button" id="remove"><i class="remove icon"></i></a>
+          <div class="ui brown buttons">
+            <div class="ui button">Menu</div>
+            <div class="ui combo top right pointing dropdown icon button">
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item"><i class="plus icon"></i>Row</div>
+                <div class="item"><i class="plus icon"></i>Column</div>
+                <div class="item"><i class="delete icon"></i>Row</div>
+                <div class="item"><i class="delete icon"></i>Column</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="ui bottom attached segment">
