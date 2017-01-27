@@ -9,14 +9,20 @@
   <link rel="stylesheet" href="style/chart.css" type="text/css">
 </head>
   <body>
-    <div id="chart"></div>
-    <div class="ui center aligned container">
-      <div class="ui blue buttons" id="buttons">
-        <button class="ui button" id="bar">Bar</button>
-        <button class="ui button" id="line">Line</button>
-        <button class="ui button" id="radar">Radar</button>
+    <div class="ui container">
+      <div class="ui segment" id="chart"></div>
+    </div>
+    <div class="ui container">
+      <div class="ui segment">
+        <div class="ui center aligned container">
+          <div class="ui blue buttons" id="buttons">
+            <button class="ui button" id="bar">Bar</button>
+            <button class="ui button" id="line">Line</button>
+            <button class="ui button" id="radar">Radar</button>
+          </div>
+        </div>
+        <canvas id="myChart"></canvas>
       </div>
     </div>
-    <canvas id="myChart"></canvas>
   </body>
 </html>
