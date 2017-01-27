@@ -1,8 +1,15 @@
 table input {
   min-width: 4em;
+  padding: .1em !important;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.headers {
+  min-width: 12em;
+}
+input[type=number] {
+  text-align: right !important;
 }
