@@ -9,29 +9,43 @@
   <link rel="stylesheet" href="style/chart.css" type="text/css">
 </head>
   <body>
-    <div class="ui container">
-      <div class="ui top attached segment" id="sheet">
+    <div class ="ui header segment" id="header">
+      <div class="ui container">
+        <div class="ui center aligned segment">
+          <h1>Spreadsheet Graphing Application</h1>
+        </div>
       </div>
     </div>
-    <div class="ui container">
-      <div class="ui top attached tabular menu" id="chartButtons">
-        <a class="active item" id="Bar">Bar</a>
-        <a class="item" id="Line">Line</a>
-        <a class="item" id="Radar">Radar</a>
-        <div class="ui right compact menu">
-          <div class="ui simple dropdown item">Menu
-            <i class="dropdown icon"></i>
-            <div class="menu" id="menu">
-              <div class="item" id="add rows"><i class="plus icon"></i>New Row</div>
-              <div class="item" id="add columns"><i class="plus icon"></i>New Column</div>
-              <div class="item" id="del rows"><i class="delete icon"></i>Remove Last Row</div>
-              <div class="item" id="del columns"><i class="delete icon"></i>Remove Last Column</div>
+    <div id="main">
+      <div class="ui container">
+        <div class="ui top attached segment" id="sheet">
+        </div>
+      </div>
+      <div class="ui container">
+        <div class="ui top attached tabular menu" id="chartButtons">
+          <a class="active item" id="Bar">Bar</a>
+          <a class="item" id="Line">Line</a>
+          <a class="item" id="Radar">Radar</a>
+          <div class="ui right compact menu">
+            <div class="ui simple dropdown item">Menu
+              <i class="dropdown icon"></i>
+              <div class="menu" id="menu">
+                <div class="item" id="add rows"><i class="plus icon"></i>New Row</div>
+                <div class="item" id="add columns"><i class="plus icon"></i>New Column</div>
+                <div class="item" id="del rows"><i class="delete icon"></i>Remove Last Row</div>
+                <div class="item" id="del columns"><i class="delete icon"></i>Remove Last Column</div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="ui bottom attached segment">
+          <canvas id="myChart"></canvas>
+        </div>
       </div>
-      <div class="ui bottom attached segment">
-        <canvas id="myChart"></canvas>
+    </div>
+    <div class="ui inverted vertical footer segment" id="footer">
+      <div class="ui center aligned container">
+        <p>This site was made by Nathan Christian using HTML, CSS, Javascript, Semantic UI, and requireJS. Copyright 2017.</p>
       </div>
     </div>
   </body>

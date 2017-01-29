@@ -13,3 +13,14 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   text-align: right !important;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#main {
+  flex-grow: 1;
+}
+#header, #footer {
+  flex-shrink: 0;
+}
