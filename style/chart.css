@@ -24,3 +24,6 @@ body {
 #header, #footer {
   flex-shrink: 0;
 }
+#sheet {
+  overflow: auto;
+}
